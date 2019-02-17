@@ -1,0 +1,20 @@
+# IntelliJ project files
+/.idea
+/*.iml
+/out
+/gen
+
+# NodeJS
+/node_modules
+
+# config
+/.env
+
+# coverage
+/.nyc_output
+/coverage/
+
+# node-lambda
+/deploy.env
+/event.json
+/.lambda
