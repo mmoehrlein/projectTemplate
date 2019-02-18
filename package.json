@@ -7,7 +7,7 @@
 	"license": "ISC",
 	"keywords": [],
 	"private": true,
-	"repository": "github:mmoehrlein/",
+	"repository": "github:mmoehrlein/projectTemplate",
 	"engines": {
 		"node": ">=8.11.3",
 		"npm": ">=6.7.0"
