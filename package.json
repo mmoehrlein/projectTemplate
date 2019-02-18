@@ -14,8 +14,8 @@
 	},
 	"main": "index.js",
 	"scripts": {
-		"preinitial": "node ./setupScripts/checkRepo.js",
-		"initial": "npx rimraf node_modules && npm i --loglevel=error && npm outdated && rimraf .git && rimraf .idea",
+		"preinitial": "node ./setupScripts/checkRepo.js && npx rimraf node_modules",
+		"initial": "npm i --loglevel=error && npm outdated && rimraf .idea && rimraf .git && git add -A && git commit -m\"feat: init base\"",
 		"postinitial": "node ./setupScripts/removeInitalNpmScript.js && node ./setupScripts/info.js && rimraf setupScripts",
 		"start": "node index.js",
 		"reinstall": "rimraf node_modules && npm cache clean && npm install",
