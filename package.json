@@ -32,9 +32,10 @@
 		"test": "ava",
 		"posttest": "",
 		"test:watch": "onerror \"npm t -- --watch\"",
-		"postversion": "git push && git push --tags",
 		"lambda:init": "npm i -D node-lambda && node-lambda setup",
-		"cz": "git cz"
+		"cz": "git cz",
+		"release": "standard-version",
+		"postrelease": "git push --follow-tags origin master"
 	},
 	"dependencies": {
 		"fs-extra": "^7.0.1",
@@ -52,6 +53,7 @@
 		"nyc": "^13.3.0",
 		"onchange": "^5.2.0",
 		"rimraf": "^2.6.3",
+		"standard-version": "^5.0.0",
 		"xo": "^0.24.0"
 	},
 	"optionalDependencies": {
