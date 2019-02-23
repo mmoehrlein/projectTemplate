@@ -32,7 +32,7 @@
 		"test": "ava",
 		"posttest": "",
 		"test:watch": "onerror \"npm t -- --watch\"",
-		"lambda:init": "npm i -D node-lambda && node-lambda setup",
+		"lambda:init": "npm i -D serverless",
 		"cz": "git cz",
 		"release": "standard-version",
 		"postrelease": "git push --follow-tags origin master"
